@@ -32,11 +32,11 @@ public class Main3Activity extends AppCompatActivity {
 
                 if(usname.length() > 0 && pass.length() > 0 && passfix.length() > 0)
                 {
-                    if(pass == passfix)
+                    if(pass.length() == passfix.length())
                     {
                         checkMK(usname , pass , passfix);
                     }
-                    else
+                    else if(pass.length()  != passfix.length() )
                     {
                         Toast.makeText(Main3Activity.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
                     }
